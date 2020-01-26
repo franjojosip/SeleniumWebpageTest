@@ -72,30 +72,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CrossBrowser and 1 more" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TestWebpage" />
-      <option name="TEST_OBJECT" value="PATTERN" />
-      <properties />
-      <listeners />
-      <patterns>
-        <pattern testClass="CrossBrowser" />
-        <pattern testClass="LoginTest" />
-      </patterns>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CrossBrowserTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TestWebpage" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CrossBrowserTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="FindPageCrumbs" type="TestNG" nameIsGenerated="true">
       <module name="LinksTestWebpage" />
       <option name="SUITE_NAME" value="" />
@@ -137,10 +113,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RegisterTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TestWebpage" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RegisterTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RegisterTest" type="TestNG" nameIsGenerated="true">
       <module name="LinksTestWebpage" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="RegisterTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WomenShoesFilterTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TestWebpage" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="WomenShoesFilterTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -163,19 +161,19 @@
       <item itemvalue="TestNG.LoginTest" />
       <item itemvalue="TestNG.RegisterTest" />
       <item itemvalue="TestNG.C:/Users/Franjo Josip/IdeaProjects/TestWebpage/testng.xml" />
-      <item itemvalue="TestNG.&lt;default&gt;" />
       <item itemvalue="TestNG.CleanBasketTest (1)" />
       <item itemvalue="TestNG.LoginTest (1)" />
-      <item itemvalue="TestNG.CrossBrowser and 1 more" />
-      <item itemvalue="TestNG.CrossBrowserTest" />
+      <item itemvalue="TestNG.WomenShoesFilterTest" />
+      <item itemvalue="TestNG.RegisterTest (1)" />
+      <item itemvalue="TestNG.&lt;default&gt;" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.CleanBasketTest (1)" />
-        <item itemvalue="TestNG.CrossBrowserTest" />
-        <item itemvalue="TestNG.LoginTest (1)" />
-        <item itemvalue="TestNG.CrossBrowser and 1 more" />
         <item itemvalue="TestNG.&lt;default&gt;" />
+        <item itemvalue="TestNG.RegisterTest (1)" />
+        <item itemvalue="TestNG.WomenShoesFilterTest" />
+        <item itemvalue="TestNG.LoginTest (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -225,10 +223,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2589" y="168" key="#LoginTest/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578336850887" />
-    <state x="2472" y="179" key="#Project_Structure" timestamp="1580069452344">
+    <state x="2472" y="179" key="#Project_Structure" timestamp="1580076838072">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2472" y="179" key="#Project_Structure/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580069452344" />
+    <state x="2472" y="179" key="#Project_Structure/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580076838072" />
     <state x="2334" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580056551468">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -245,22 +243,22 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2610" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1579038963074" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1580073715277">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1580077141210">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580073715277" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1580073715277">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580077141210" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1580077141210">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580073715277" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1580073715277">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580077141210" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1580077141210">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580073715277" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1580073715277">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580077141210" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1580077141210">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580073715277" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580077141210" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1580069321350">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

@@ -1,5 +1,6 @@
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
-import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -14,12 +15,14 @@ public class ChangeBasketTest{
     private WebDriverWait wait;
     private ChangeBasket changeBasketObject;
     private String URL = "http://www.ferivisport.hr/";
-    private By quantityField = By.xpath("//*[@id=\"shopping-cart-table\"]/tbody/tr/td[5]/input");
+    @FindBy (xpath = "//*[@id=\"shopping-cart-table\"]/tbody/tr/td[5]/input")
+    private WebElement quantityField;
 
     @BeforeMethod
     public void setup() {
         System.setProperty("webdriver.chrome.driver", "C:/Users/Franjo Josip/IdeaProjects/ChromeDriver/chromedriver.exe");
         this.driver = new ChromeDriver();
+        PageFactory.initElements(driver, this);
         this.changeBasketObject = new ChangeBasket(this.driver);
         this.wait = new WebDriverWait(this.driver, 5);
         this.driver.navigate().to(this.URL);
@@ -29,9 +32,8 @@ public class ChangeBasketTest{
     @Test
     public void testChangeBasketQuantity() {
         this.changeBasketObject.changeProductQuantity();
-        this.wait.until(ExpectedConditions.visibilityOfElementLocated(this.quantityField));
-        WebElement testLink = this.driver.findElement(this.quantityField);
-        Assert.assertEquals(testLink.getAttribute("value"), "3");
+        this.wait.until(ExpectedConditions.visibilityOf(this.quantityField));
+        Assert.assertEquals(this.quantityField.getAttribute("value"), "3");
     }
 
     @AfterMethod

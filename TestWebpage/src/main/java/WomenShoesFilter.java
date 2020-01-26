@@ -1,6 +1,7 @@
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -8,13 +9,18 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class WomenShoesFilter {
     private WebDriver driver;
     private WebDriverWait wait;
-    private By shoeslink = By.xpath("//*[@id=\"nav\"]/ol/li[4]/a");
-    private By fashionShoeslink = By.xpath("//*[@id=\"nav\"]/ol/li[4]/ul/div[1]/li[1]");
-    private By genderRow = By.xpath("//*[@id=\"narrow-by-list\"]/dt[3]");
-    private By genderType = By.xpath("//*[@id=\"narrow-by-list\"]/dd[3]/ol/li[2]/a");
+    @FindBy(xpath = "//*[@id=\"nav\"]/ol/li[4]/a")
+    private WebElement shoeslink;
+    @FindBy(xpath = "//*[@id=\"nav\"]/ol/li[4]/ul/div[1]/li[1]")
+    private WebElement fashionShoeslink;
+    @FindBy(xpath = "//*[@id=\"narrow-by-list\"]/dt[3]")
+    private WebElement genderRow;
+    @FindBy(xpath = "//*[@id=\"narrow-by-list\"]/dd[3]/ol/li[2]/a")
+    private WebElement genderType;
 
     //Set WomenShoesFilter driver
     public WomenShoesFilter(WebDriver driver){
+        PageFactory.initElements(driver, this);
         this.driver = driver;
         this.wait = new WebDriverWait(driver, 5);
     }
@@ -22,25 +28,24 @@ public class WomenShoesFilter {
     //Click on Clothes link button on webpage HomePage
     private void clickFashionShoesOnNavigationBar(){
         Actions action = new Actions(this.driver);
-        WebElement shoesLink = this.driver.findElement(this.shoeslink);
-        action.moveToElement(shoesLink).moveToElement(driver.findElement(this.fashionShoeslink)).click().build().perform();
+        action.moveToElement(this.shoeslink).moveToElement(this.fashionShoeslink).click().build().perform();
     }
 
     //Click on gender row
     private void clickOnGender(){
-        this.driver.findElement(this.genderRow).click();
+        this.genderRow.click();
     }
 
     //Choose gender type
     private void chooseGenderType(){
-        this.driver.findElement(this.genderType).click();
+        this.genderType.click();
     }
 
     public void filterWomenShoesRoutine() {
         this.clickFashionShoesOnNavigationBar();
-        this.wait.until(ExpectedConditions.visibilityOfElementLocated(this.genderRow));
+        this.wait.until(ExpectedConditions.visibilityOf(this.genderRow));
         this.clickOnGender();
-        this.wait.until(ExpectedConditions.visibilityOfElementLocated(this.genderType));
+        this.wait.until(ExpectedConditions.visibilityOf(this.genderType));
         this.chooseGenderType();
 
     }
