@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="16e1574b-1cf1-4d36-86e0-a285c384bb87" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="XSLT Stylesheet" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1W1tEDQ15Z4yTPtYpnQk0kRa5CN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.CleanBasketTest (1)">
+    <configuration name="C:/Users/Franjo Josip/IdeaProjects/TestWebpage/testng.xml" type="TestNG" nameIsGenerated="true">
+      <module name="TestWebpage" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CleanBasketTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TestWebpage" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CleanBasketTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CrossBrowser and 1 more" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TestWebpage" />
+      <option name="TEST_OBJECT" value="PATTERN" />
+      <properties />
+      <listeners />
+      <patterns>
+        <pattern testClass="CrossBrowser" />
+        <pattern testClass="LoginTest" />
+      </patterns>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CrossBrowserTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TestWebpage" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CrossBrowserTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FindPageCrumbs" type="TestNG" nameIsGenerated="true">
+      <module name="LinksTestWebpage" />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FindPageCrumbs" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TestWebpage" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LoginTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest" type="TestNG" nameIsGenerated="true">
+      <module name="LinksTestWebpage" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LoginTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegisterTest" type="TestNG" nameIsGenerated="true">
+      <module name="LinksTestWebpage" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RegisterTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="&lt;default&gt;" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TestWebpage" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="TestNG.FindPageCrumbs" />
+      <item itemvalue="TestNG.LoginTest" />
+      <item itemvalue="TestNG.RegisterTest" />
+      <item itemvalue="TestNG.C:/Users/Franjo Josip/IdeaProjects/TestWebpage/testng.xml" />
+      <item itemvalue="TestNG.&lt;default&gt;" />
+      <item itemvalue="TestNG.CleanBasketTest (1)" />
+      <item itemvalue="TestNG.LoginTest (1)" />
+      <item itemvalue="TestNG.CrossBrowser and 1 more" />
+      <item itemvalue="TestNG.CrossBrowserTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.CleanBasketTest (1)" />
+        <item itemvalue="TestNG.CrossBrowserTest" />
+        <item itemvalue="TestNG.LoginTest (1)" />
+        <item itemvalue="TestNG.CrossBrowser and 1 more" />
+        <item itemvalue="TestNG.&lt;default&gt;" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="16e1574b-1cf1-4d36-86e0-a285c384bb87" name="Default Changelist" comment="" />
+      <created>1578328815303</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1578328815303</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2589" y="152" key="#C:/Users/Franjo_Josip/IdeaProjects/LinksTestWebpage/testng.xml" timestamp="1579038836246">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2589" y="152" key="#C:/Users/Franjo_Josip/IdeaProjects/LinksTestWebpage/testng.xml/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1579038836246" />
+    <state x="2589" y="152" key="#C:/Users/Franjo_Josip/IdeaProjects/TestWebpage/testng.xml" timestamp="1580057131760">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2589" y="152" key="#C:/Users/Franjo_Josip/IdeaProjects/TestWebpage/testng.xml/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580057131760" />
+    <state x="2589" y="168" key="#FindPageCrumbs" timestamp="1579038632049">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2589" y="168" key="#FindPageCrumbs/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1579038632049" />
+    <state x="2472" y="179" key="#Inspections" timestamp="1580065473029">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2472" y="179" key="#Inspections/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580065473029" />
+    <state x="2589" y="168" key="#LoginTest" timestamp="1578336850887">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2589" y="168" key="#LoginTest/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578336850887" />
+    <state x="2472" y="179" key="#Project_Structure" timestamp="1580069452344">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2472" y="179" key="#Project_Structure/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580069452344" />
+    <state x="2334" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580056551468">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2334" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580056551468" />
+    <state x="2012" y="91" width="1733" height="857" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1580056312409">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2012" y="91" width="1733" height="857" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580056312409" />
+    <state x="2676" y="380" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1580066283883">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2676" y="380" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580066283883" />
+    <state x="2610" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1579038963074">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2610" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1579038963074" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1580073715277">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580073715277" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1580073715277">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580073715277" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1580073715277">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580073715277" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1580073715277">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580073715277" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1580069321350">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580069321350" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1580069321350">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580069321350" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1580069321349">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580069321349" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1580069321350">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580069321350" />
+    <state x="2381" y="163" key="SettingsEditor" timestamp="1578330405334">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2381" y="163" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578330405334" />
+    <state x="2696" y="299" key="chooseDestDirectoryDialog" timestamp="1580066331454">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2696" y="299" key="chooseDestDirectoryDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580066331454" />
+    <state x="2012" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1579038227515">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2012" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1579038227515" />
+    <state x="2581" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1580058255203">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="661" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578328865321" />
+    <state x="2581" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580058255203" />
+    <state x="37" y="254" width="1680" height="715" key="dock-window-1" timestamp="1578688222615">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="37" y="254" width="1680" height="715" key="dock-window-1/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578688222615" />
+  </component>
+</project>
