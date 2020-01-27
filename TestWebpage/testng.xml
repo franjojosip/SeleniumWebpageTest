@@ -1,14 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="AllTestsSuite">
-    <test name="Ferivi Selenium TestNG Test">
+<suite name="AllTestsSuite" parallel="tests" thread-count="5">
+    <parameter name="browser" value="chrome" />
+    <test name="FirstTest">
         <classes>
-            <class name="LoginTest"/>
-            <class name="RegisterTest"/>
-            <class name="PageCrumbsTest"/>
-            <class name="CleanBasketTest"/>
-            <class name="ChangeBasketTest"/>
-            <class name="WomenShoesFilterTest"/>
+            <class name = "parallelTest.LoginTest"/>
+        </classes>
+    </test>
+    <test name="SecondTest">
+        <classes>
+            <class name = "parallelTest.RegisterTest"/>
+        </classes>
+    </test>
+    <test name="ThirdTest">
+        <classes>
+            <class name = "parallelTest.PageCrumbsTest"/>
+        </classes>
+    </test>
+    <test name="FourthTest">
+        <classes>
+            <class name = "parallelTest.CleanBasketTest"/>
+        </classes>
+    </test>
+    <test name="FifthTest">
+        <classes>
+            <class name = "parallelTest.ChangeBasketTest"/>
         </classes>
     </test>
 </suite>
