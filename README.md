@@ -45,7 +45,7 @@ Design pattern for enhancing automation test maintenance. It's using Object orie
 ### Reporting and Screenshot
 ExtentReports will help us to know what steps did test do and where was fail. If step fail it will be recorded with TakesScreenshot class and saved in your report.
 
-[Report image](https://ibb.co/qk8Vkrr)
+![report](https://user-images.githubusercontent.com/52075105/73295518-210ea180-4208-11ea-981e-defa98fa01b9.png)
 
 ## Tests
 
