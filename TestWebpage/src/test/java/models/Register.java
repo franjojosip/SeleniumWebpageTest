@@ -1,21 +1,22 @@
 package models;
 
-import java.awt.Toolkit;
-import java.io.IOException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.awt.*;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.DataFlavor;
 import java.awt.datatransfer.Transferable;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import java.awt.datatransfer.UnsupportedFlavorException;
-import org.openqa.selenium.support.ui.ExpectedConditions;
+import java.io.IOException;
 
 public class Register {
-    public WebDriver driver;
-    public WebDriverWait wait;
+    private WebDriver driver;
+    private WebDriverWait wait;
     private String email;
     private String emailUrl = "http://www.minuteinbox.com/";
     private String feriviUrl = "http://www.ferivisport.hr/";
@@ -43,7 +44,7 @@ public class Register {
     @FindBy (xpath = "//*[@id=\"form-validate\"]/div[3]/div[2]/button")
     private WebElement btnCreateAccount;
 
-    //Set driver
+    //Set Register drivers
     public Register(WebDriver driver, WebDriverWait wait) {
         PageFactory.initElements(driver, this);
         this.driver = driver;
@@ -60,12 +61,12 @@ public class Register {
         this.copyEmail.click();
         Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
         Transferable contents = clipboard.getContents(null);
-        email = (String) contents.getTransferData(DataFlavor.stringFlavor);
+        this.email = (String) contents.getTransferData(DataFlavor.stringFlavor);
     }
 
     //Navigate to Ferivi page
     private void navigateToFeriviPage() {
-        driver.navigate().to(this.feriviUrl);
+        this.driver.navigate().to(this.feriviUrl);
     }
 
     //Click on register button

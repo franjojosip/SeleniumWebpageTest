@@ -15,37 +15,37 @@ public class CrossBrowser {
 
     protected WebDriver driver = null;
     protected WebDriverWait wait;
-    protected String URL = "http://www.ferivisport.hr/";
+    private String URL = "http://www.ferivisport.hr/";
 
     @Parameters("browser")
     @BeforeTest
     public void setup(String browser) throws Exception {
         //Check if parameter passed from TestNG is 'firefox'
         if (browser.equalsIgnoreCase("firefox")) {
-            if(driver == null){
+            if(this.driver == null){
                 WebDriverManager.firefoxdriver().setup();
-                driver = new FirefoxDriver();
+                this.driver = new FirefoxDriver();
             }
         }
         //Check if parameter passed from TestNG is 'chrome'
         else if (browser.equalsIgnoreCase("chrome")) {
-            if(driver == null){
+            if(this.driver == null){
                 WebDriverManager.chromedriver().setup();
-                driver = new ChromeDriver();
+                this.driver = new ChromeDriver();
             }
         }
         //Check if parameter passed as 'Edge'
         else if (browser.equalsIgnoreCase("edge")) {
-            if(driver == null) {
+            if(this.driver == null) {
                 WebDriverManager.edgedriver().setup();
-                driver = new EdgeDriver();
+                this.driver = new EdgeDriver();
             }
         }
         //Check if parameter passed as 'ie' (Internet Explorer)
         else if (browser.equalsIgnoreCase("ie")) {
-            if(driver == null) {
+            if(this.driver == null) {
                 WebDriverManager.iedriver().setup();
-                driver = new InternetExplorerDriver();
+                this.driver = new InternetExplorerDriver();
             }
         } else {
             //If no browser passed throw exception
@@ -60,8 +60,8 @@ public class CrossBrowser {
     @AfterTest
     public void teardownTest() {
         //Close browser and end the session
-        if (driver != null) {
-            driver.quit();
+        if (this.driver != null) {
+            this.driver.quit();
         }
     }
 }

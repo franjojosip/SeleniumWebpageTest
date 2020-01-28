@@ -23,18 +23,18 @@ public class RegisterTest extends CrossBrowser{
     private Register registerObject;
     private ExtentReports extentReports = ExtentReports.get(RegisterTest.class);
     @FindBy (xpath = "//*[@id='inner-wrap']/div/div/div[2]/div[1]/div[3]/p")
-    public WebElement registerTitle;
+    private WebElement registerTitle;
 
     @Test
     public void testFeriviRegister() throws IOException, UnsupportedFlavorException {
-        extentReports.init("F:\\test.html", false);
-        extentReports.startTest("Verify Register");
-        extentReports.log(LogStatus.INFO, "Elements initialized");
+        this.extentReports.init("F:\\test.html", false);
+        this.extentReports.startTest("Verify Register");
+        this.extentReports.log(LogStatus.INFO, "Elements initialized");
         PageFactory.initElements(driver, this);
         this.registerObject = new Register(driver, wait);
-        extentReports.log(LogStatus.INFO, "Register class instance created");
+        this.extentReports.log(LogStatus.INFO, "Register class instance created");
         this.registerObject.registerRoutine("Pero","Peric","12","1","1994", "test123");
-        extentReports.log(LogStatus.INFO, "Register routine done");
+        this.extentReports.log(LogStatus.INFO, "Register routine done");
         wait.until(ExpectedConditions.visibilityOf(this.registerTitle));
         Assert.assertEquals(this.registerTitle.getText(), "DOBRODOŠLI, PERO PERIC!");
     }
@@ -45,12 +45,12 @@ public class RegisterTest extends CrossBrowser{
         if(result.getStatus() == ITestResult.FAILURE)
         {
             String destination  = "F:\\RegisterTestFailScreenshot.png";
-            extentReports.log(LogStatus.FAIL, "Test failed, screenshot below.");
+            this.extentReports.log(LogStatus.FAIL, "Test failed, screenshot below.");
             File screenshotFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
             FileUtils.copyFile(screenshotFile, new File(destination));
-            extentReports.attachScreenshot(destination);
+            this.extentReports.attachScreenshot(destination);
         }
-        else extentReports.log(LogStatus.PASS, "Test successful.");
-        extentReports.endTest();
+        else this.extentReports.log(LogStatus.PASS, "Test successful.");
+        this.extentReports.endTest();
     }
 }

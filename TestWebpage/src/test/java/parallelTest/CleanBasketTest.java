@@ -22,18 +22,18 @@ public class CleanBasketTest extends CrossBrowser{
     private CleanBasket cleanBasketObject;
     private ExtentReports extentReports = ExtentReports.get(CleanBasketTest.class);
     @FindBy (xpath = "//*[@id=\"inner-wrap\"]/div/div/div[6]/div/div[2]/div[2]/h1")
-    public WebElement emptyBasketTitle;
+    private WebElement emptyBasketTitle;
 
     @Test
     public void testCleanBasket() {
-        extentReports.init("F:\\test.html", false);
-        extentReports.startTest("Verify Clean Basket");
-        extentReports.log(LogStatus.INFO, "Elements initialized");
+        this.extentReports.init("F:\\test.html", false);
+        this.extentReports.startTest("Verify Clean Basket");
+        this.extentReports.log(LogStatus.INFO, "Elements initialized");
         PageFactory.initElements(driver, this);
         this.cleanBasketObject = new CleanBasket(driver, wait);
-        extentReports.log(LogStatus.INFO, "Clean basket class instance created");
+        this.extentReports.log(LogStatus.INFO, "Clean basket class instance created");
         this.cleanBasketObject.cleanBasketRoutine();
-        extentReports.log(LogStatus.INFO, "Clean Basket routine done");
+        this.extentReports.log(LogStatus.INFO, "Clean Basket routine done");
         wait.until(ExpectedConditions.visibilityOf(this.emptyBasketTitle));
         Assert.assertEquals(this.emptyBasketTitle.getText(), "KOŠARICA JE PRAZNA");
     }
@@ -44,13 +44,13 @@ public class CleanBasketTest extends CrossBrowser{
         if(result.getStatus() == ITestResult.FAILURE)
         {
             String destination  = "F:\\CleanBasketTestFailScreenshot.png";
-            extentReports.log(LogStatus.FAIL, "Test failed, screenshot below.");
+            this.extentReports.log(LogStatus.FAIL, "Test failed, screenshot below.");
             File screenshotFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
             FileUtils.copyFile(screenshotFile, new File(destination));
-            extentReports.attachScreenshot(destination);
+            this.extentReports.attachScreenshot(destination);
         }
-        else extentReports.log(LogStatus.PASS, "Test successful.");
-        extentReports.endTest();
+        else this.extentReports.log(LogStatus.PASS, "Test successful.");
+        this.extentReports.endTest();
     }
 
 }

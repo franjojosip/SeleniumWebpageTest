@@ -9,8 +9,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class FindPageCrumbs {
-    public WebDriver driver;
-    public WebDriverWait wait;
+    private WebDriver driver;
+    private WebDriverWait wait;
     @FindBy (xpath = "//*[@id=\"nav\"]/ol/li[2]/a")
     private WebElement linkMenClothes;
     @FindBy (xpath = "/html/body/div[6]/div[2]/div/div/div[7]/div[2]/div[1]/div/div/div/dl/dt[4]")
@@ -22,7 +22,7 @@ public class FindPageCrumbs {
     @FindBy (xpath = "//*[@id='nav']/ol/li[2]/ul/div[1]/li[6]/a")
     private WebElement shoesBox;
 
-    //Set models.FindPageCrumbs driver
+    //Set FindPageCrumbs drivers
     public FindPageCrumbs(WebDriver driver, WebDriverWait wait){
         PageFactory.initElements(driver, this);
         this.driver = driver;
@@ -41,12 +41,12 @@ public class FindPageCrumbs {
         this.genderRow.click();
     }
 
-    //Choose gender type
+    //Choose Gender type
     private void chooseGenderType(){
         this.genderType.click();
     }
 
-    //Click on first trainers
+    //Click on First trainers
     private void chooseFirstTrainers(){
         this.firstTrainersBox.click();
     }

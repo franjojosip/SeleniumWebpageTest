@@ -9,8 +9,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class ChangeBasket {
-    public WebDriver driver;
-    public WebDriverWait wait;
+    private WebDriver driver;
+    private WebDriverWait wait;
     @FindBy(xpath = "//*[@id=\"search_mini_form\"]/div/div[2]")
     private WebElement btnSearch;
     @FindBy(xpath = "//*[@id=\"search_mini_form\"]/div/div[1]/div/button")
@@ -26,7 +26,7 @@ public class ChangeBasket {
     @FindBy(xpath = "//*[@id=\"shopping-cart-table\"]/tbody/tr/td[5]/input")
     private WebElement quantityField;
 
-    //Set models.ChangeBasket driver
+    //Set ChangeBasket drivers
     public ChangeBasket(WebDriver driver, WebDriverWait wait) {
         PageFactory.initElements(driver, this);
         this.driver = driver;
@@ -49,7 +49,7 @@ public class ChangeBasket {
         this.productField.click();
     }
 
-    //Choose product
+    //Choose product size
     private void chooseProductSize() {
         this.productSize.click();
     }
@@ -59,7 +59,7 @@ public class ChangeBasket {
         this.btnAddProduct.click();
     }
 
-    //Add products
+    //Change product quantity
     private void changeQuantity() {
         this.quantityField.clear();
         this.quantityField.sendKeys("3");

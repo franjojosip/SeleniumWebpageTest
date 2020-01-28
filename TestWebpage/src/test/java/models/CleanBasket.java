@@ -9,8 +9,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class CleanBasket {
-    public WebDriver driver;
-    public WebDriverWait wait;
+    private WebDriver driver;
+    private WebDriverWait wait;
     @FindBy (xpath = "//*[@id=\"nav\"]/ol/li[2]/a")
     private WebElement linkMenClothes;
     @FindBy (xpath = "//*[@id=\"inner-wrap\"]/div/div/div[7]/div[2]/div[2]/div[4]/ul/li[1]/a[1]")
@@ -24,7 +24,7 @@ public class CleanBasket {
     @FindBy (xpath = "//*[@id=\"nav\"]/ol/li[2]/ul/div[1]/li[6]")
     private WebElement shoesBox;
 
-    //Set models.CleanBasket driver
+    //Set CleanBasket drivers
     public CleanBasket(WebDriver driver, WebDriverWait wait){
         PageFactory.initElements(driver, this);
         this.driver = driver;

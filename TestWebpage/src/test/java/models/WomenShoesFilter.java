@@ -9,8 +9,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class WomenShoesFilter {
-    public WebDriver driver;
-    public WebDriverWait wait;
+    private WebDriver driver;
+    private WebDriverWait wait;
     @FindBy(xpath = "//*[@id=\"nav\"]/ol/li[4]/a")
     private WebElement shoeslink;
     @FindBy(xpath = "//*[@id=\"nav\"]/ol/li[4]/ul/div[1]/li[1]")
@@ -20,7 +20,7 @@ public class WomenShoesFilter {
     @FindBy(xpath = "//*[@id=\"narrow-by-list\"]/dd[3]/ol/li[2]/a")
     private WebElement genderType;
 
-    //Set models.WomenShoesFilter driver
+    //Set WomenShoesFilter driver
     public WomenShoesFilter(WebDriver driver, WebDriverWait wait){
         PageFactory.initElements(driver, this);
         this.driver = driver;

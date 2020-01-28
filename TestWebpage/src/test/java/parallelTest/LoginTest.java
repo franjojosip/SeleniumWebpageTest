@@ -22,18 +22,18 @@ public class LoginTest extends CrossBrowser{
     private Login loginObj;
     private ExtentReports extentReports = ExtentReports.get(LoginTest.class);
     @FindBy (xpath = "//*[@id='inner-wrap']/div/div/div[2]/div[1]/div[3]/p")
-    public WebElement loginTitle;
+    private WebElement loginTitle;
 
     @Test
     public void testLogin() {
-        extentReports.init("F:\\test.html", false);
-        extentReports.startTest("Verify Login");
+        this.extentReports.init("F:\\test.html", false);
+        this.extentReports.startTest("Verify Login");
         PageFactory.initElements(driver, this);
-        extentReports.log(LogStatus.INFO, "Elements initialized");
+        this.extentReports.log(LogStatus.INFO, "Elements initialized");
         this.loginObj = new Login(driver,wait);
-        extentReports.log(LogStatus.INFO, "Login class instance created");
+        this.extentReports.log(LogStatus.INFO, "Login class instance created");
         this.loginObj.loginRoutine("pace.cosimo@uola.org", "test123");
-        extentReports.log(LogStatus.INFO, "Login Routine done");
+        this.extentReports.log(LogStatus.INFO, "Login Routine done");
         wait.until(ExpectedConditions.visibilityOf(this.loginTitle));
         Assert.assertEquals(this.loginTitle.getText(), "DOBRODOŠLI, PERO PERIC!");
     }
@@ -44,13 +44,13 @@ public class LoginTest extends CrossBrowser{
         if(result.getStatus() == ITestResult.FAILURE)
         {
             String destination  = "F:\\Projektici\\LoginTestFailScreenshot.png";
-            extentReports.log(LogStatus.FAIL, "Test failed, screenshot below.");
+            this.extentReports.log(LogStatus.FAIL, "Test failed, screenshot below.");
             File screenshotFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
             FileUtils.copyFile(screenshotFile, new File(destination));
-            extentReports.attachScreenshot(destination);
+            this.extentReports.attachScreenshot(destination);
         }
-        else extentReports.log(LogStatus.PASS, "Test successful.");
-        extentReports.endTest();
+        else this.extentReports.log(LogStatus.PASS, "Test successful.");
+        this.extentReports.endTest();
     }
 
 }

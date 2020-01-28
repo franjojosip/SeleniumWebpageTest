@@ -8,8 +8,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class Login {
-    public WebDriver driver;
-    public WebDriverWait wait;
+    private WebDriver driver;
+    private WebDriverWait wait;
     @FindBy(id = "scrollingClasses")
     private WebElement btnHomePageLogin;
     @FindBy(id = "mini-login")
@@ -19,14 +19,14 @@ public class Login {
     @FindBy(id = "send2")
     private WebElement btnLogin;
 
-    //Set models.Login
+    //Set Login drivers
     public Login(WebDriver driver, WebDriverWait wait){
         PageFactory.initElements(driver, this);
         this.driver = driver;
         this.wait = wait;
     }
 
-    //Click on models.Login button on HomePage
+    //Click on Login button on HomePage
     private void clickHomePageLogin(){
         this.btnHomePageLogin.click();
     }

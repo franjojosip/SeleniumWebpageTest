@@ -22,18 +22,18 @@ public class PageCrumbsTest extends CrossBrowser{
     private FindPageCrumbs findPageCrumbsObj;
     private ExtentReports extentReports = ExtentReports.get(PageCrumbsTest.class);
     @FindBy (xpath = "//*[@id=\"inner-wrap\"]/div/div/div[6]/div/div[1]/div/div[1]/ul/li[4]/a")
-    public WebElement rukometPageCrumb;
+    private WebElement rukometPageCrumb;
 
     @Test
     public void testFeriviHandballProductPageCrumbs() {
-        extentReports.init("F:\\test.html", false);
-        extentReports.startTest("Verify Find Page Crumbs");
-        extentReports.log(LogStatus.INFO, "Elements initialized");
+        this.extentReports.init("F:\\test.html", false);
+        this.extentReports.startTest("Verify Find Page Crumbs");
+        this.extentReports.log(LogStatus.INFO, "Elements initialized");
         PageFactory.initElements(driver, this);
         this.findPageCrumbsObj = new FindPageCrumbs(driver, wait);
-        extentReports.log(LogStatus.INFO, "Find page crumbs class instance created");
+        this.extentReports.log(LogStatus.INFO, "Find page crumbs class instance created");
         this.findPageCrumbsObj.findPageCrumbs();
-        extentReports.log(LogStatus.INFO, "Find page crumbs done");
+        this.extentReports.log(LogStatus.INFO, "Find page crumbs done");
         wait.until(ExpectedConditions.visibilityOf(this.rukometPageCrumb));
         Assert.assertEquals(this.rukometPageCrumb.getText(), "RUKOMET");
     }
@@ -44,12 +44,12 @@ public class PageCrumbsTest extends CrossBrowser{
         if(result.getStatus() == ITestResult.FAILURE)
         {
             String destination  = "F:\\PageCrumbsTestFailScreenshot.png";
-            extentReports.log(LogStatus.FAIL, "Test failed, screenshot below.");
+            this.extentReports.log(LogStatus.FAIL, "Test failed, screenshot below.");
             File screenshotFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
             FileUtils.copyFile(screenshotFile, new File(destination));
-            extentReports.attachScreenshot(destination);
+            this.extentReports.attachScreenshot(destination);
         }
-        else extentReports.log(LogStatus.PASS, "Test successful.");
-        extentReports.endTest();
+        else this.extentReports.log(LogStatus.PASS, "Test successful.");
+        this.extentReports.endTest();
     }
 }
