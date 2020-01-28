@@ -58,3 +58,8 @@ ExtentReports will help us to know what steps did test do and where was fail. If
 | RegisterTest| For register test will load 10 minutes email page and copy email. Then it will go to web shop and click on Register. After that fill out the form with given credentials and user information and try to register. If register successful, success message will be shown.|
 | WomenShoesFilterTest| Test goes to homepage of web shop and hover over shoes and choose fashion shoes. Then it clicks gender row and select women gender. Finally it will check if page properly loaded shoes for specific gender.|
 
+## Related Topics
+
+- [How to take screenshot in Selenium](https://www.browserstack.com/guide/take-screenshots-in-selenium)
+- [Add Reporting in Selenium](https://www.youtube.com/watch?v=zSjwgjVl4P4)
+- [WebDriverManager](https://github.com/bonigarcia/webdrivermanager)
