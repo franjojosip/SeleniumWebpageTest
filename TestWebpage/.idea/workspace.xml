@@ -7,6 +7,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -44,6 +47,19 @@
     </key>
   </component>
   <component name="RunManager" selected="TestNG.C:/Users/Franjo Josip/IdeaProjects/TestWebpage/testng.xml">
+    <configuration name="CaptureScreenshot" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="parallelTest.CaptureScreenshot" />
+      <module name="TestWebpage" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="parallelTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AllTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TestWebpage" />
       <option name="SUITE_NAME" value="" />
@@ -97,17 +113,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CleanBasketTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TestWebpage" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="parallelTest.CleanBasketTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="FindPageCrumbs" type="TestNG" nameIsGenerated="true">
       <module name="LinksTestWebpage" />
       <option name="SUITE_NAME" value="" />
@@ -120,6 +125,29 @@
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="moduleWithDependencies" />
       </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TestWebpage" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="parallelTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="SeleniumParallelTest" />
+      <option name="PACKAGE_NAME" value="parallelTest" />
+      <option name="MAIN_CLASS_NAME" value="parallelTest.LoginTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
       <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
@@ -143,16 +171,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="parallelTest.RegisterTest" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="&lt;default&gt;" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TestWebpage" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="PACKAGE" />
       <properties />
       <listeners />
       <method v="2">
@@ -203,19 +221,19 @@
       <item itemvalue="TestNG.LoginTest" />
       <item itemvalue="TestNG.RegisterTest" />
       <item itemvalue="TestNG.C:/Users/Franjo Josip/IdeaProjects/TestWebpage/testng.xml" />
-      <item itemvalue="TestNG.CleanBasketTest (1)" />
       <item itemvalue="TestNG.AllTests" />
-      <item itemvalue="TestNG.&lt;default&gt;" />
       <item itemvalue="TestNG.ChangeBasketTest" />
       <item itemvalue="TestNG.parallelTest" />
+      <item itemvalue="Application.CaptureScreenshot" />
+      <item itemvalue="TestNG.LoginTest (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LoginTest (1)" />
+        <item itemvalue="Application.CaptureScreenshot" />
         <item itemvalue="TestNG.parallelTest" />
         <item itemvalue="TestNG.AllTests" />
         <item itemvalue="TestNG.ChangeBasketTest" />
-        <item itemvalue="TestNG.CleanBasketTest (1)" />
-        <item itemvalue="TestNG.&lt;default&gt;" />
       </list>
     </recent_temporary>
   </component>
@@ -289,38 +307,42 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2610" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1579038963074" />
-    <state width="938" height="282" key="GridCell.Tab.0.bottom" timestamp="1580163663836">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1580170046552">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580163663836" />
-    <state width="938" height="282" key="GridCell.Tab.0.center" timestamp="1580163663836">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580170046552" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1580170046551">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580163663836" />
-    <state width="938" height="282" key="GridCell.Tab.0.left" timestamp="1580163663836">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580170046551" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1580170046551">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580163663836" />
-    <state width="938" height="282" key="GridCell.Tab.0.right" timestamp="1580163663836">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580170046551" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1580170046551">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580163663836" />
-    <state width="938" height="348" key="GridCell.Tab.1.bottom" timestamp="1580160414939">
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580170046551" />
+    <state width="938" height="348" key="GridCell.Tab.1.bottom" timestamp="1580167724637">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580160414939" />
-    <state width="938" height="348" key="GridCell.Tab.1.center" timestamp="1580160414939">
+    <state width="938" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580167724637" />
+    <state width="938" height="348" key="GridCell.Tab.1.center" timestamp="1580167724637">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580160414939" />
-    <state width="938" height="348" key="GridCell.Tab.1.left" timestamp="1580160414939">
+    <state width="938" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580167724637" />
+    <state width="938" height="348" key="GridCell.Tab.1.left" timestamp="1580167724636">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580160414939" />
-    <state width="938" height="348" key="GridCell.Tab.1.right" timestamp="1580160414939">
+    <state width="938" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580167724636" />
+    <state width="938" height="348" key="GridCell.Tab.1.right" timestamp="1580167724637">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580160414939" />
+    <state width="938" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580167724637" />
+    <state x="2660" y="205" key="Maven.ArtifactSearchDialog" timestamp="1580168382566">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2660" y="205" key="Maven.ArtifactSearchDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580168382566" />
     <state x="2381" y="163" key="SettingsEditor" timestamp="1578330405334">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -346,16 +368,5 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="37" y="254" width="1680" height="715" key="dock-window-1/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578688222615" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/parallelTest/LoginTest.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

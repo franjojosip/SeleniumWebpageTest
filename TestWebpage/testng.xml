@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="AllTestsSuite" parallel="tests" thread-count="5">
+<suite name="AllTestsSuite" parallel="tests" thread-count="6">
     <parameter name="browser" value="chrome" />
     <test name="FirstTest">
         <classes>
@@ -19,12 +19,17 @@
     </test>
     <test name="FourthTest">
         <classes>
-            <class name = "parallelTest.CleanBasketTest"/>
+            <class name = "parallelTest.WomenShoesFilterTest"/>
         </classes>
     </test>
     <test name="FifthTest">
         <classes>
             <class name = "parallelTest.ChangeBasketTest"/>
+        </classes>
+    </test>
+    <test name="SixthTest">
+        <classes>
+            <class name = "parallelTest.CleanBasketTest"/>
         </classes>
     </test>
 </suite>
