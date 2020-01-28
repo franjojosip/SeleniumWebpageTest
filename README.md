@@ -7,16 +7,17 @@
 
 This is a framework for automated software testing made for Testing college project based on Java programming language in InteliJ program which can be easily managed.
 
+---
 ### Instalation
 - [Install InteliJ](https://www.jetbrains.com/idea/download/#section=windows)
 - [Install JavaSDK](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 
-After instalation and creating project open Maven repository to download needed dependecies on Maven link below:
+- After instalation and creating project open Maven repository to download needed dependecies on Maven link below:
 JetBrains Java Anotation, WebJars, RelevantCodes, Bonigarcia, Logging.log4j, Selenium, TestNG
-
 - [Maven Repository](https://mvnrepository.com/)
-
-This repo contains the following tools and tehniques for creating the frame:
+- To clone on your computer use: `git clone https://github.com/franjojosip/SeleniumWebpageTest.git`
+---
+**This repo contains the following tools and tehniques for creating the frame:**
 - WebDriver
 - WebDriverManager
 - PageFactory
@@ -43,3 +44,17 @@ Design pattern for enhancing automation test maintenance. It's using Object orie
 
 ### Reporting and Screenshot
 ExtentReports will help us to know what steps did test do and where was fail. If step fail it will be recorded with TakesScreenshot class and saved in your report.
+
+[Report image](https://ibb.co/qk8Vkrr)
+
+## Tests
+
+| Test class| Description|
+| ----------|:----------:|
+| ChangeBasketTest| Test which will search for product with search field, choose product size and add one product to basket. After that it will change quantity in basket to 3|
+| CleanBasketTest| Test will hover over first link which will trigger dropdown menu and it will choose man shoes. Then it will pick shoes size and add product to basket. Finally it will use clean basket button and check if basket is empty.|
+| LoginTest| This test is using email from 10min emails with test password. It will open home page, insert email and password and try to log in. If test successfull page will show success message.|
+| PageCrumbsTest| Test will hover over clothes link and choose handball shoes. Secondly automation clicks on gender row and choose men gender and then after page reload select first shoes. If test is correct there will be wanted word in page crumbs.|
+| RegisterTest| For register test will load 10 minutes email page and copy email. Then it will go to web shop and click on Register. After that fill out the form with given credentials and user information and try to register. If register successful, success message will be shown.|
+| WomenShoesFilterTest| Test goes to homepage of web shop and hover over shoes and choose fashion shoes. Then it clicks gender row and select women gender. Finally it will check if page properly loaded shoes for specific gender.|
+
